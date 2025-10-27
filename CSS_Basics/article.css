@@ -1,0 +1,27 @@
+body {
+  font-family: Georgia, serif;
+  margin: 2em;
+  line-height: 1.6;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+p::first-letter {
+  font-size: 2em;
+}
+
+p::first-line {
+  font-weight: bold;
+}
+
+mark {
+  background: yellow;
+}
+
+blockquote {
+  border-left: 5px solid #999;
+  padding-left: 15px;
+  background: #f0f0f0;
+}
