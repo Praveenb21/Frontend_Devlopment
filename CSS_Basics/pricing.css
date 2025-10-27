@@ -1,0 +1,30 @@
+body {
+  font-family: sans-serif;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.pricing {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+.plan {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+  background: #f0f0f0;
+}
+
+.popular {
+  border: 2px solid #007bff;
+}

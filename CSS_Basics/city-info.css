@@ -1,0 +1,30 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+header {
+  background: linear-gradient(90deg, #4b79a1, #283e51);
+  color: white;
+  padding: 1.5em;
+  text-align: center;
+}
+
+.intro {
+  background: url('taj.jpg') center/cover fixed;
+  color: white;
+  padding: 100px 20px;
+}
+
+.culture {
+  background: radial-gradient(circle, #ffd89b, #19547b);
+  color: white;
+  padding: 100px 20px;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
