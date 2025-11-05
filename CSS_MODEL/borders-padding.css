@@ -1,0 +1,10 @@
+body{margin:0;font-family:Arial,sans-serif;background:#f5f7fa}
+header{text-align:center;padding:1rem;background:#003366;color:#fff}
+.container{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;padding:2rem}
+.box{padding:2rem;width:180px;text-align:center;background:#fff;border-radius:8px;transition:border-color .4s}
+.solid{border:4px solid #2a7be3}
+.dashed{border:4px dashed #2a7be3}
+.double{border:6px double #2a7be3}
+.groove{border:6px groove #2a7be3}
+.box:hover{border-color:#ff6a00}
+@media(max-width:600px){.box{width:90%}}
