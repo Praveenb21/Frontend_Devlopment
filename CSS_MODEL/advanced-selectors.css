@@ -1,9 +1,0 @@
-body{font-family:Arial;margin:0;background:#f8f9fa}
-h1{text-align:center;padding:1rem;background:#003366;color:#fff}
-.list{list-style:none;padding:2rem}
-a[href^="https"]{color:#28a745}
-a:hover{color:#ff6a00}
-input[type="text"]:focus{border:2px solid #0b76d1;outline:none}
-li:first-child + li{color:#007bff}
-li:nth-child(4)::before{content:"→ ";color:#ff0066}
-span~*{font-style:italic}
