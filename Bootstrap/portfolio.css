@@ -1,0 +1,24 @@
+/* ==================================
+   Custom Styles for Portfolio Page
+   ================================== */
+
+/* Add a soft background for main section */
+main {
+  background: #f8f9fa;
+}
+
+/* Form and Button Enhancements */
+form .btn {
+  font-weight: 500;
+}
+
+/* Subtle hover effects for buttons */
+.btn:hover {
+  transform: scale(1.03);
+  transition: 0.3s ease;
+}
+
+/* Profile Image shadow for focus */
+img.rounded-circle {
+  border: 3px solid #0d6efd;
+}

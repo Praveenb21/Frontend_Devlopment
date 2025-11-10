@@ -1,0 +1,27 @@
+/* Task Tracker Custom Styles */
+
+/* Hover effect for list items */
+.list-group-item {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.list-group-item:hover {
+  background-color: #f8f9fa;
+  transform: scale(1.02);
+}
+
+/* Badge styling */
+.badge {
+  font-size: 0.85rem;
+  padding: 0.5em 0.7em;
+}
+
+/* Responsive design */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .list-group-item {
+    font-size: 0.95rem;
+  }
+}

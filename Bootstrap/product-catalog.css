@@ -1,0 +1,32 @@
+/* ========================================
+   Custom Styles for Product Catalog
+   ======================================== */
+
+/* Hover effect for product cards */
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Adjust image for uniformity */
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
+}
+
+/* Make buttons stand out */
+.btn-primary:hover {
+  background-color: #0a58ca;
+  transform: scale(1.05);
+}
+
+/* Smooth footer positioning */
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

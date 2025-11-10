@@ -1,0 +1,35 @@
+/* ===========================================
+   Custom Styles for Restaurant Menu Page
+   =========================================== */
+
+/* Table Enhancements */
+.table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Hover effect for table rows */
+.table-hover tbody tr:hover {
+  background-color: #f8f9fa;
+  transform: scale(1.01);
+  transition: 0.2s ease;
+}
+
+/* List group styling */
+.list-group-item:hover {
+  background-color: #f1f1f1;
+  transform: translateY(-3px);
+  transition: 0.3s ease;
+}
+
+/* Image styling */
+figure img {
+  max-width: 600px;
+}
+
+/* Footer stays consistent */
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
