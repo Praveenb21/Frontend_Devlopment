@@ -1,4 +1,0 @@
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
-.grid img{width:100%;cursor:pointer;}
-.modal{position:fixed;inset:0;background:rgba(0,0,0,0.6);display:none;align-items:center;justify-content:center;}
-.modal-content img{width:400px;}
