@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q9 - Multi-JQuery Widgets</title>
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        const $j1 = jQuery.noConflict(true); 
+    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        const $j3 = jQuery.noConflict(true); 
+    </script>
+
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .widget { border: 1px solid #ccc; padding: 15px; margin-bottom: 20px; border-radius: 5px; }
+        .carousel-item { padding: 10px; border: 1px solid #ddd; margin: 5px; text-align: center; }
+        .active-widget { border-color: #ff9800 !important; background-color: #fff3e0; } 
+        .tooltip { 
+            position: absolute; 
+            background-color: #333; 
+            color: white; 
+            padding: 5px 10px; 
+            border-radius: 3px; 
+            font-size: 0.9em; 
+            z-index: 1000;
+            display: none; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Multi-Version jQuery Dashboard</h1>
+    </header>
+
+    <main>
+        <section class="widget" id="carousel-widget">
+            <h2>Carousel Widget (V1.x)</h2>
+            <div id="carousel">
+                <div class="carousel-item">Slide 1</div>
+                <div class="carousel-item">Slide 2</div>
+                <div class="carousel-item">Slide 3</div>
+            </div>
+            <button id="next-slide">Next</button>
+        </section>
+
+        <section class="widget" id="modal-widget">
+            <h2>Modal/Tooltip Widget (V3.x)</h2>
+            <button id="show-modal">Show Notification Modal</button>
+            <p id="tooltip-target" title="New features are here!">Hover for Tooltip (V3.x)</p>
+        </section>
+    </main>
+    
+    <div id="notification-modal" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); padding:20px; background:white; border:1px solid #333; z-index:999;">
+        <h3>Important Notification</h3>
+        <p>A new system update is available. Please review.</p>
+        <button id="close-modal">Close</button>
+    </div>
+
+    <script src="q9_noconflict.js"></script>
+</body>
+</html>

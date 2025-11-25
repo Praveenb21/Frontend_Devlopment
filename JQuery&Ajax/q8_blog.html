@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q8 - Dynamic Blog Posts</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .controls button { padding: 10px 15px; margin: 5px; cursor: pointer; }
+        .post-list { list-style: none; padding: 0; }
+        .blog-post { 
+            border: 1px solid #ddd; 
+            padding: 15px; 
+            margin-bottom: 15px; 
+            border-radius: 5px; 
+            position: relative;
+        }
+        .tag { 
+            display: inline-block; 
+            background-color: #00bcd4; 
+            color: white; 
+            padding: 2px 6px; 
+            border-radius: 3px; 
+            font-size: 0.8em; 
+            margin-right: 5px;
+        }
+        .keyword-highlight { background-color: #ffeb3b; } 
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog Post Manager</h1>
+    </header>
+
+    <main>
+        <div class="controls">
+            <button id="add-post-btn">Add New Post</button>
+            <button id="prepend-post-btn">Prepend Featured Post</button>
+            <button id="remove-last-btn">Remove Last Post</button>
+            <button id="add-tags-btn">Add Tags to Posts</button>
+            <button id="highlight-keywords-btn">Highlight "New"</button>
+        </div>
+        
+        <hr>
+
+        <section class="post-list">
+            <article class="blog-post" data-post-id="1">
+                <h2>The Basics of Web Development</h2>
+                <p class="post-content">Starting with HTML and CSS is the first step in your web development journey. Learn the basics today.</p>
+                <small>Published: Jan 1, 2024</small>
+            </article>
+            <article class="blog-post" data-post-id="2">
+                <h2>New Trends in JavaScript</h2>
+                <p class="post-content">Discover the **new** features in the latest JavaScript updates. Stay current with modern development.</p>
+                <small>Published: Feb 15, 2024</small>
+            </article>
+            <article class="blog-post" data-post-id="3">
+                <h2>A Look at jQuery's Longevity</h2>
+                <p class="post-content">Despite **new** frameworks, jQuery remains a popular tool for DOM manipulation and quick prototyping.</p>
+                <small>Published: Mar 20, 2024</small>
+            </article>
+        </section>
+    </main>
+
+    <script src="q8_blog.js"></script>
+</body>
+</html>

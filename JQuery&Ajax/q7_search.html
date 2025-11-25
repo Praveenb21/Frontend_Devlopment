@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q7 - Search Courses</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        #search-input { padding: 10px; width: 300px; margin-bottom: 15px; border: 1px solid #ccc; }
+        .course-list { list-style: none; padding: 0; }
+        .course-item { padding: 10px; border: 1px solid #eee; margin-bottom: 5px; background-color: #f9f9f9; }
+        .highlighted-text { background-color: #ffeb3b; color: #333; font-weight: bold; } 
+        .course-item.no-match { display: none; } 
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Online Courses</h1>
+    </header>
+
+    <main>
+        <input type="text" id="search-input" placeholder="Search for courses (e.g., JS, Python)">
+        <button id="clear-search-btn">Clear Search</button> 
+        
+        <p>Found <span id="match-count">5</span> courses.</p>
+
+        <ul class="course-list">
+            <li class="course-item">
+                <h3>JavaScript Fundamentals</h3>
+                <p class="description">Learn the core concepts of **JavaScript** for web development.</p>
+            </li>
+            <li class="course-item">
+                <h3>Python for Data Science</h3>
+                <p class="description">Introduction to **Python** programming and its application in data analysis.</p>
+            </li>
+            <li class="course-item">
+                <h3>Advanced CSS and SCSS</h3>
+                <p class="description">Master modern **CSS** layouts and preprocessor features like SCSS.</p>
+            </li>
+            <li class="course-item">
+                <h3>jQuery Mastery</h3>
+                <p class="description">A deep dive into the **jQuery** library for DOM manipulation.</p>
+            </li>
+            <li class="course-item">
+                <h3>Node.js Backend Development</h3>
+                <p class="description">Building scalable backend applications using **Node.js** and **JavaScript**.</p>
+            </li>
+        </ul>
+    </main>
+
+    <script src="q7_search.js"></script>
+</body>
+</html>

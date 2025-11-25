@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 - Special Offer Banner</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .banner-controls { margin-bottom: 20px; }
+        .banner-controls button { padding: 10px 15px; margin: 5px; cursor: pointer; }
+        .banner { 
+            padding: 20px; 
+            margin-bottom: 10px; 
+            border-radius: 5px; 
+            font-size: 1.1em; 
+            font-weight: bold; 
+            text-align: center;
+        }
+        .banner-static { background-color: #c8e6c9; border: 2px solid #4caf50; }
+        .banner-1 { background-color: #fff8e1; border: 2px solid #ffc107; display: block; }
+        .banner-2 { background-color: #e3f2fd; border: 2px solid #2196f3; display: block; }
+        .rotating-banners { position: relative; height: 100px; }
+        .rotating-banner { 
+            position: absolute; 
+            width: 100%;
+            display: none; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Promotional Banners</h1>
+    </header>
+
+    <main>
+        <div class="banner-controls">
+            <button id="hide-btn">Hide Banner 1</button>
+            <button id="show-btn">Show Banner 1</button>
+            <button id="slide-btn">Toggle Slide Banner 2</button>
+            <button id="fade-out-btn">Fade Out Banner 2</button>
+            <button id="fade-in-btn">Fade In Banner 2</button>
+        </div>
+
+        <section class="banner banner-1">
+            <p>10% OFF Sitewide - Use Code: SAVE10</p>
+        </section>
+
+        <section class="banner banner-2">
+            <p>Free Shipping on all orders over $50!</p>
+        </section>
+
+        <section class="banner banner-static">
+            <p>Static Banner: Always visible.</p>
+        </section>
+        
+        <hr>
+
+        <h2>Auto-Rotating Offers</h2>
+        <div class="rotating-banners">
+            <article class="banner rotating-banner" id="rotator-1" style="background-color: #fce4ec; border-color: #e91e63;">
+                <p>Limited Time: Get a Bonus Gift with Purchase!</p>
+            </article>
+            <article class="banner rotating-banner" id="rotator-2" style="background-color: #f1f8e9; border-color: #8bc34a;">
+                <p>New Arrivals: Check out our latest collection!</p>
+            </article>
+            <article class="banner rotating-banner" id="rotator-3" style="background-color: #ede7f6; border-color: #673ab7;">
+                <p>Membership Discount: Save an extra 5% today!</p>
+            </article>
+            <article class="banner rotating-banner" id="rotator-4" style="background-color: #ffe0b2; border-color: #ff9800;">
+                <p>Flash Sale: Ends in 24 hours!</p>
+            </article>
+            <article class="banner rotating-banner" id="rotator-5" style="background-color: #cfd8dc; border-color: #607d8b;">
+                <p>Feedback Survey: Win a $100 Gift Card!</p>
+            </article>
+        </div>
+    </main>
+
+    <script src="q4_banners.js"></script>
+</body>
+</html>

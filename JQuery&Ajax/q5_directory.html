@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q5 - Team Members Directory</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .department { margin-bottom: 30px; border: 1px solid #ddd; padding: 15px; border-radius: 5px; }
+        .department-header { font-size: 1.5em; cursor: pointer; background-color: #f0f0f0; padding: 10px; margin: -15px -15px 15px -15px; border-radius: 5px 5px 0 0; }
+        .member { 
+            margin-bottom: 10px; 
+            padding: 10px; 
+            border: 1px solid #eee; 
+            cursor: pointer; 
+            transition: background-color 0.3s;
+        }
+        .manager { font-weight: bold; background-color: #e0f7fa; border-left: 5px solid #00bcd4; }
+        .member-info { display: none; font-size: 0.9em; color: #555; margin-top: 5px; }
+
+        .highlight { background-color: #fffacd !important; border-color: #ffeb3b !important; }
+        .dept-highlight { background-color: #e8f5e9; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Team Directory</h1>
+    </header>
+
+    <main class="directory">
+        <section class="department" data-dept="engineering">
+            <h2 class="department-header">Engineering Team</h2>
+            <div class="team-list">
+                <article class="member manager" data-role="manager" data-name="Alice">
+                    Alice Johnson (Manager)
+                    <div class="member-info">Email: alice.j@corp.com</div>
+                </article>
+                <article class="member" data-role="developer" data-name="Bob">
+                    Bob Smith (Developer)
+                    <div class="member-info">Email: bob.s@corp.com | Phone: 555-1234</div>
+                </article>
+                <article class="member" data-role="developer" data-name="Charlie">
+                    Charlie Brown (Developer)
+                    <div class="member-info">Email: charlie.b@corp.com | Phone: 555-5678</div>
+                </article>
+                <article class="member" data-role="qa" data-name="David">
+                    David Lee (QA)
+                    <div class="member-info">Email: david.l@corp.com | Phone: 555-9012</div>
+                </article>
+                <article class="member" data-role="developer" data-name="Eve">
+                    Eve Davis (Developer)
+                    <div class="member-info">Email: eve.d@corp.com | Phone: 555-3456</div>
+                </article>
+            </div>
+        </section>
+
+        <section class="department" data-dept="marketing">
+            <h2 class="department-header">Marketing Team</h2>
+            <div class="team-list">
+                <article class="member manager" data-role="manager" data-name="Frank">
+                    Frank Miller (Manager)
+                    <div class="member-info">Email: frank.m@corp.com</div>
+                </article>
+                <article class="member" data-role="specialist" data-name="Grace">
+                    Grace Hall (Specialist)
+                    <div class="member-info">Email: grace.h@corp.com | Phone: 555-7890</div>
+                </article>
+                <article class="member" data-role="coordinator" data-name="Henry">
+                    Henry King (Coordinator)
+                    <div class="member-info">Email: henry.k@corp.com | Phone: 555-2345</div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <script src="q5_directory.js"></script>
+</body>
+</html>

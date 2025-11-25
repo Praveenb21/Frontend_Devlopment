@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3 - Interactive FAQ</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; max-width: 800px; margin: auto; }
+        .faq-item { margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px; }
+        .faq-question { padding: 10px; background-color: #f4f4f4; cursor: pointer; font-weight: bold; }
+        .faq-answer { padding: 10px; border-top: 1px solid #eee; display: none; }
+        .hover-color { background-color: #e0f7fa !important; } 
+        .parent-highlight { background-color: #ffecb3; } 
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Frequently Asked Questions</h1>
+    </header>
+
+    <main class="faq-container">
+        <section class="faq-item">
+            <h2 class="faq-question">What is jQuery?</h2>
+            <div class="faq-answer">jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API.</div>
+        </section>
+
+        <section class="faq-item">
+            <h2 class="faq-question">How do I include jQuery?</h2>
+            <div class="faq-answer">You can include jQuery via a CDN link in your HTML file, or by downloading the file and linking it locally. <input type="text" placeholder="Your follow-up question" class="answer-input"></div>
+        </section>
+
+        <section class="faq-item">
+            <h2 class="faq-question">What are selectors in jQuery?</h2>
+            <div class="faq-answer">Selectors are used to "select" (or find) HTML elements based on their name, id, classes, types, attributes, values of attributes, and much more.</div>
+        </section>
+
+        <section class="faq-item">
+            <h2 class="faq-question">Can I use multiple jQuery versions?</h2>
+            <div class="faq-answer">Yes, but you should use the `jQuery.noConflict()` method to avoid variable name conflicts (e.g., the `$` alias).</div>
+        </section>
+
+        <section class="faq-item">
+            <h2 class="faq-question">Is jQuery still relevant?</h2>
+            <div class="faq-answer">While newer frameworks exist, jQuery remains relevant for simple projects, older sites, and DOM manipulation tasks.</div>
+        </section>
+    </main>
+
+    <script src="q3_faq.js"></script>
+</body>
+</html>

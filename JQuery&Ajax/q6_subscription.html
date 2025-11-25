@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q6 - Event Subscription Panel</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        #notification-status { margin: 15px 0; padding: 10px; border-radius: 5px; font-weight: bold; }
+        .enabled { background-color: #e8f5e9; color: #4caf50; }
+        .disabled { background-color: #ffebee; color: #f44336; }
+        .controls button { padding: 10px 15px; margin: 5px; cursor: pointer; }
+        .topic-list { margin-top: 20px; border: 1px solid #ccc; padding: 10px; border-radius: 5px; }
+        .topic-list button { margin: 5px; padding: 5px 10px; }
+        .success-message { margin-top: 15px; padding: 10px; border-radius: 5px; background-color: #bbdefb; color: #1e88e5; display: none; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Event Subscription Manager</h1>
+    </header>
+
+    <main>
+        <section id="notification-status" class="disabled">
+            Notifications are currently **Disabled**
+        </section>
+
+        <div class="controls">
+            <button id="subscribe-btn">Subscribe to All</button>
+            <button id="unsubscribe-btn">Unsubscribe from All</button>
+        </div>
+        
+        <hr>
+
+        <h2>Topic Subscriptions</h2>
+        <div id="topics-area">
+            <input type="text" id="new-topic-name" placeholder="Enter new topic name">
+            <button id="add-topic-btn">Add Topic</button>
+
+            <ul id="topic-list" class="topic-list">
+                <li>
+                    <span>News Alerts </span> 
+                    <button class="topic-btn" data-topic="news">Toggle Status (on/off)</button>
+                    <button class="remove-topic-btn">Remove</button>
+                </li>
+                <li>
+                    <span>Product Updates </span> 
+                    <button class="topic-btn" data-topic="products">Toggle Status (on/off)</button>
+                    <button class="remove-topic-btn">Remove</button>
+                </li>
+                <li>
+                    <span>Monthly Newsletter </span> 
+                    <button class="topic-btn" data-topic="newsletter">Toggle Status (on/off)</button>
+                    <button class="remove-topic-btn" id="removable-topic-btn">Remove (Test Off)</button>
+                </li>
+            </ul>
+        </div>
+        
+        <div id="status-message" class="success-message"></div>
+    </main>
+
+    <script src="q6_subscription.js"></script>
+</body>
+</html>

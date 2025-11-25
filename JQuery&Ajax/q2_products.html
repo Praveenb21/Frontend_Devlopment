@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2 - Product Highlight</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .product-list { display: flex; gap: 20px; flex-wrap: wrap; }
+        .product-card { border: 1px solid #ccc; padding: 15px; width: 200px; box-shadow: 2px 2px 5px rgba(0,0,0,0.1); position: relative; }
+        .product-card h3 { margin-top: 0; }
+        
+        .highlighted { background-color: #fffacd; border-color: #ffeb3b; }
+
+        .favorite-icon { cursor: pointer; position: absolute; top: 10px; right: 10px; font-size: 1.5em; color: #ccc; }
+        .favorite-icon.selected { color: #ff5252; }
+
+        .details { display: none; font-size: 0.9em; color: #555; margin-top: 10px; }
+
+        .product-card[data-discount="true"] { border: 2px solid #4caf50; background-color: #e8f5e9; }
+        .product-card[data-discount="true"] h3::after { content: " (SALE!)"; color: #4caf50; font-size: 0.8em; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Product Showcase</h1>
+    </header>
+    
+    <main class="product-list">
+        <article class="product-card" data-stock="in-stock" data-discount="false">
+            <span class="favorite-icon">⭐</span>
+            <h3>Laptop Pro</h3>
+            <p>Price: $1200</p>
+            <div class="details">High-performance laptop with 16GB RAM.</div>
+        </article>
+
+        <article class="product-card" data-stock="in-stock" data-discount="true">
+            <span class="favorite-icon">⭐</span>
+            <h3>Wireless Mouse</h3>
+            <p>Price: $25</p>
+            <div class="details">Ergonomic design, long battery life.</div>
+        </article>
+
+        <article class="product-card" data-stock="out-of-stock" data-discount="false">
+            <span class="favorite-icon">⭐</span>
+            <h3>Mechanical Keyboard</h3>
+            <p>Price: $99</p>
+            <div class="details">Tactile switches for a great typing experience.</div>
+        </article>
+        
+        <article class="product-card" data-stock="in-stock" data-discount="true">
+            <span class="favorite-icon">⭐</span>
+            <h3>4K Monitor</h3>
+            <p>Price: $350</p>
+            <div class="details">Vibrant colors and fast refresh rate.</div>
+        </article>
+
+        <article class="product-card" data-stock="in-stock" data-discount="false">
+            <span class="favorite-icon">⭐</span>
+            <h3>Webcam HD</h3>
+            <p>Price: $50</p>
+            <div class="details">Crystal clear video for calls and streaming.</div>
+        </article>
+    </main>
+
+    <script src="q2_products.js"></script>
+</body>
+</html>
